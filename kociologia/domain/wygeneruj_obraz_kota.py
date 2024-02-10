@@ -7,7 +7,7 @@ def wygeneruj_obraz_kota(rasa_kota: str) -> str:
     response = client.images.generate(
         model="dall-e-3",
         prompt=f"zdjęcie kota rasy {rasa_kota}",
-        size="800x800",
+        size="1024x1024",
         quality="standard",
         n=1,
     )
